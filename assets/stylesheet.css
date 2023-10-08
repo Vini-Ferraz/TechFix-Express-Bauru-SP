@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --preto-fundo: #1B1B1B;
+    --verde-fundo: #26998B;
+    --verde-secundario-fundo: #26993F;
+    --azul-fundo: #266999;
+    --fonte-titulo-telas-p: 30px;
+    --fonte-titulo-secundaria-telas-p: 25px;
+    --fonte-texto-telas-p: 20px;
+    --fonte-texto-secundaria-telas-p: 17px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Jura', sans-serif;
+}
