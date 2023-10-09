@@ -16,12 +16,16 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    transition: 350ms ease-in;
 }
 body {
     font-family: 'Jura', sans-serif;
 }
 #menu_navegacao{
     background-color: var(--preto-fundo);
+}
+#logo_texto_nav{
+    color: var(--fonte-cor-branca);
 }
 #servicos_section, #contato_section{
     background: linear-gradient(104deg, var(--verde-secundario-fundo) 0%, var(--verde-fundo) 47.4%, var(--azul-fundo) 100%); 
@@ -49,7 +53,6 @@ body {
         display: none;
     }
     #logo_texto_nav{
-        color: var(--fonte-cor-branca);
         text-align: center;
         padding: 10px 0;
     }
@@ -157,5 +160,51 @@ body {
     }
     #footer_texto{
         font-size: var(--fonte-titulo-secundaria-telas-p);
+    }
+}
+@media (min-width: 701px) {
+    #menu_navegacao{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 75px;
+    }
+    #logo_texto_nav{
+        font-size: var(--fonte-titulo-secundaria-telas-p);
+        padding: 0 20px;
+    }
+    #logo_img_nav{
+        display: none;
+    }
+    #menu_nav_estilo_flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+    .menu_itens{
+        font-size: var(--fonte-texto-telas-p);
+        text-decoration: none;
+        color: var(--fonte-cor-branca);
+        margin-right: 30px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .menu_itens:hover{
+        background-color: var(--azul-fundo);
+    }
+    .menu_itens:nth-of-type(4){
+        margin-right: 0;
+    }
+    #menu_nav_estilo_flex > li {
+        list-style: none;
+    }
+
+    #img_hero_row {
+        display: none;
+    }
+    #hero_row{
+        padding: 100px 0;
+        text-align: center;
     }
 }
