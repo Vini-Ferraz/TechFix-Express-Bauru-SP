@@ -23,7 +23,7 @@ body {
 #menu_navegacao{
     background-color: var(--preto-fundo);
 }
-#servicos_section{
+#servicos_section, #contato_section{
     background: linear-gradient(104deg, var(--verde-secundario-fundo) 0%, var(--verde-fundo) 47.4%, var(--azul-fundo) 100%); 
 }
 .caixa-servicos{
@@ -35,9 +35,17 @@ body {
     align-items: center;
     justify-content: space-evenly;
 }
+#contato_section{
+    text-align: center;
+}
+#footer{
+    background-color: var(--preto-fundo);
+    color: var(--fonte-cor-branca);
+}
+
 
 @media (max-width: 700px) {
-    #logo_img_nav, #menu_nav_caixa_estilo, #img_sobre_nos{
+    #logo_img_nav, #menu_nav_caixa_estilo, #img_sobre_nos, #horario_funcionamento{
         display: none;
     }
     #logo_texto_nav{
@@ -57,13 +65,13 @@ body {
         height: 230px;
         object-fit: cover;
     }
-    #hero_row_titulo, #hero_row_paragrafo, #hero_row_social_proof, #hero_row_horario, .titulo_section, .caixa-servicos:nth-of-type(1){
+    #hero_row_titulo, #hero_row_paragrafo, #hero_row_social_proof, #hero_row_horario, .titulo_section, .caixa-servicos:nth-of-type(1), #sobre_nos_section, .texto_contato_section, #footer_texto{
         margin-bottom: 25px;
     }
     #hero_row_titulo {
         font-size: var(--fonte-titulo-secundaria-telas-p);
     }
-    #hero_row_paragrafo, .caixa_servicos_paragrafo{
+    #hero_row_paragrafo, .caixa_servicos_paragrafo, #sobre_nos_paragrafo{
         line-height: 30px;
     }
     #hero_row_paragrafo{
@@ -93,7 +101,7 @@ body {
         font-size: var(--fonte-titulo-secundaria-telas-p);
     }
 
-    #servicos_section{
+    #servicos_section, #contato_section, #footer{
         padding: 30px 0;
     }
     .titulo_section{
@@ -121,5 +129,33 @@ body {
 
     #sobre_nos_titulo{
         margin: 25px 0;
+    }
+    #sobre_nos_paragrafo{
+        font-size: var(--fonte-texto-telas-p);
+    }
+
+    .titulo_secunadario{
+        font-size: var(--fonte-titulo-secundaria-telas-p);
+        font-weight: 600;
+        padding-bottom: 5px;
+    }
+    .texto_contato_section{
+        font-size: var(--fonte-texto-telas-p);
+    }
+    #redes_sociais_caixa_estilo{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .redes_sociais_icones, #logo_footer{
+        height: 35px;
+        width: 35px;
+    }
+
+    #footer{
+        text-align: center;
+    }
+    #footer_texto{
+        font-size: var(--fonte-titulo-secundaria-telas-p);
     }
 }
