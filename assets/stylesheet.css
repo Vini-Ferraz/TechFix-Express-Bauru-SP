@@ -11,6 +11,7 @@
     --fonte-titulo-secundaria-telas-p: 25px;
     --fonte-texto-telas-p: 20px;
     --fonte-texto-secundaria-telas-p: 17px;
+    --fonte-titulo-telas-m: 45px;
 }
 *{
     padding: 0;
@@ -31,7 +32,7 @@ body {
     background-color: var(--azul-fundo);
     border: none;
     border-radius: 10px;
-    width: 320px;
+    width: 300px;
     font-weight: 700;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
 }
@@ -217,14 +218,14 @@ body {
     #img_hero_row {
         display: none;
     }
-    #hero_row{
+    #hero_row, #sobre_nos_section{
         margin: 0 20px;
     }
     #hero_row{
         padding: 100px 0;
         text-align: center;
     }
-    #hero_row_titulo, #hero_row_paragrafo, #hero_row_social_proof{
+    #hero_row_titulo, #hero_row_paragrafo, #hero_row_social_proof, #hero_row_horario, .titulo_section{
         margin-bottom: 30px;
     }
     #hero_row_titulo{
@@ -236,5 +237,60 @@ body {
     #hero_row_social_proof{
         font-size: var(--fonte-texto-secundaria-telas-p);
         font-style: italic;
+    }
+    #hero_row_horario{
+        font-size: var(--fonte-texto-telas-p);
+    }
+    #botao_hero_row{
+        font-size: var(--fonte-titulo-secundaria-telas-p);
+        height: 50px;
+    }
+
+    #servicos_section, #sobre_nos_section, #contato_section, #footer{
+        padding: 40px 0;
+    }
+    .titulo_section{
+        font-size: var(--fonte-titulo-telas-m);
+        text-align: center;
+    }
+    #caixa_servicos_flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .caixa-servicos{
+        width: 316px;
+        height: 387px; 
+        padding: 0 2%;
+    }
+    .caixa_servicos_titulo{
+        text-align: center;
+        font-size: var(--fonte-titulo-secundaria-telas-p);
+    }
+    hr {
+        width: 90%;
+    }
+    #hero_row_paragrafo, .caixa_servicos_paragrafo, #sobre_nos_paragrafo{
+        line-height: 30px;
+    }
+    .caixa_servicos_paragrafo{
+        font-size: var(--fonte-texto-telas-p);
+    }
+
+    #sobre_nos_caixa_flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #img_sobre_nos{
+        width: 340px;
+        height: 360px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    #sobre_nos_paragrafo{
+        font-size: var(--fonte-texto-telas-p);
+        text-align: justify;
+        width: 320px;
     }
 }
