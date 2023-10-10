@@ -225,7 +225,7 @@ body {
         padding: 100px 0;
         text-align: center;
     }
-    #hero_row_titulo, #hero_row_paragrafo, #hero_row_social_proof, #hero_row_horario, .titulo_section{
+    #hero_row_titulo, #hero_row_paragrafo, #hero_row_social_proof, #hero_row_horario, .titulo_section, .texto_contato_section{
         margin-bottom: 30px;
     }
     #hero_row_titulo{
@@ -292,5 +292,44 @@ body {
         font-size: var(--fonte-texto-telas-p);
         text-align: justify;
         width: 320px;
+    }
+
+    #contato_section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .texto_contato_section{
+        font-size: var(--fonte-texto-telas-p);
+    }
+    .redes_sociais_icones, #logo_footer{
+        height: 40px;
+        width: 40px;
+        margin-top: 10px;
+    }
+    #redes_sociais_caixa_estilo{
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #logo_footer_caixa_flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+    #horario_funcionamento{
+        font-size: var(--fonte-titulo-secundaria-telas-p);
+        font-weight: 600;
     }
 }
