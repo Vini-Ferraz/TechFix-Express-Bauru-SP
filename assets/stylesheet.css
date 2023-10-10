@@ -22,9 +22,20 @@
     margin: 0;
     box-sizing: border-box;
     transition: 350ms ease-in;
+    scroll-behavior: smooth;
 }
 body {
     font-family: 'Jura', sans-serif;
+}
+#go_up_flecha{
+    position: fixed;
+    left: 5vw;
+    bottom: 5vh;
+}
+#go_up_flecha > button {
+    background-color: var(--azul-fundo);
+    border: none;
+    border-radius: 10px;
 }
 #menu_navegacao{
     background-color: var(--preto-fundo);
@@ -66,6 +77,9 @@ body {
 
 
 @media (max-width: 700px) {
+    #imagem_flecha{
+        width: 45px;
+    }
     #logo_img_nav, #menu_nav_caixa_estilo, #img_sobre_nos, #horario_funcionamento{
         display: none;
     }
@@ -180,6 +194,9 @@ body {
     }
 }
 @media (min-width: 701px) {
+    #imagem_flecha{
+        width: 50px;
+    }
     
     #menu_navegacao{
         display: flex;
