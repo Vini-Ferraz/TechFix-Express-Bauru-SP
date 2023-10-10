@@ -12,6 +12,10 @@
     --fonte-texto-telas-p: 20px;
     --fonte-texto-secundaria-telas-p: 17px;
     --fonte-titulo-telas-m: 45px;
+    --fonte-titulo-secundaria-telas-g: 40px;
+    --fonte-texto-telas-g: 25px;
+    --fonte-texto-secundaria-telas-g: 22px;
+    --fonte-titulo-telas-g: 60px;
 }
 *{
     padding: 0;
@@ -330,6 +334,126 @@ body {
     }
     #horario_funcionamento{
         font-size: var(--fonte-titulo-secundaria-telas-p);
+        text-align: center;
+        font-weight: 600;
+    }
+}
+@media (min-width: 1000px) {
+    #menu_navegacao{
+        height: 80px;
+        padding: 5% 90px;
+    }
+    #logo_nav_menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 30vw;
+    }
+    #logo_texto_nav{
+        font-size: var(--fonte-titulo-secundaria-telas-g);
+        margin-left: 25px;
+    }
+    #logo_img_nav{
+        display: inline;
+        height: 50px;
+        width: 50px;
+    }
+    .menu_itens{
+        font-size: var(--fonte-texto-telas-g);
+        margin-right: 35px;
+        padding: 10px;
+        border-radius: 10px;
+        white-space: nowrap;
+    }
+
+    #hero_row, #sobre_nos_section{
+        margin: 0 100px;
+    }
+    #hero_row{
+        padding: 125px 0;
+    }
+    #hero_row_titulo{
+        font-size: var(--fonte-titulo-secundaria-telas-g);
+    }
+    #hero_row_paragrafo{
+        font-size: var(--fonte-texto-telas-g);
+    }
+    #hero_row_social_proof{
+        font-size: var(--fonte-texto-secundaria-telas-g);
+        font-weight: 300;
+    }
+    #hero_row_horario{
+        font-size: var(--fonte-texto-telas-g);
+    }
+    #botao_hero_row{
+        font-size: var(--fonte-titulo-telas-p);
+    }
+
+    #servicos_section, #sobre_nos_section, #contato_section, #footer{
+        padding: 50px 0;
+    }
+    .titulo_section{
+        font-size: var(--fonte-titulo-telas-g);
+    }
+    .caixa-servicos{
+        width: 472px;
+        height: 489px; 
+        padding: 0 5%;
+        text-align: center;
+    }
+    .caixa_servicos_titulo{
+        text-align: center;
+        font-size: var(--fonte-titulo-secundaria-telas-g);
+    }
+    hr {
+        width: 95%;
+    }
+    .caixa_servicos_paragrafo{
+        font-size: var(--fonte-texto-telas-g);
+    }
+
+    #sobre_nos_caixa_flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #img_sobre_nos{
+        width: 470px;
+        height: 495px; 
+        margin-right: 50px;
+    }
+    #sobre_nos_paragrafo{
+        font-size: var(--fonte-texto-telas-g);
+        line-height: 40px;
+        width: 500px;
+    }
+
+    .texto_contato_section{
+        font-size: var(--fonte-texto-telas-g);
+    }
+    .redes_sociais_icones, #logo_footer{
+        height: 45px;
+        width: 45px;
+        margin-top: 15px;
+    }
+    #redes_sociais_caixa_estilo{
+        width: 45vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 125px;
+        padding-right: 125px;
+    }
+
+    #horario_funcionamento{
+        font-size: var(--fonte-titulo-secundaria-telas-p);
+        text-align: center;
         font-weight: 600;
     }
 }
