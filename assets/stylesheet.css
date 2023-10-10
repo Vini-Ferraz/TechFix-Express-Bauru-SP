@@ -58,7 +58,7 @@ body {
 #servicos_section, #contato_section{
     background: linear-gradient(104deg, var(--verde-secundario-fundo) 0%, var(--verde-fundo) 47.4%, var(--azul-fundo) 100%); 
 }
-.caixa-servicos{
+.caixa_servicos{
     color: var(--fonte-cor-branca);
     background-color: var(--preto-fundo);
     border-radius: 10px;
@@ -103,7 +103,7 @@ body {
         height: 230px;
         object-fit: cover;
     }
-    #hero_row_titulo, #hero_row_paragrafo, #hero_row_social_proof, #hero_row_horario, .titulo_section, .caixa-servicos:nth-of-type(1), #sobre_nos_section, .texto_contato_section, #footer_texto{
+    #hero_row_titulo, #hero_row_paragrafo, #hero_row_social_proof, #hero_row_horario, .titulo_section, .caixa_servicos:nth-of-type(1), #sobre_nos_section, .texto_contato_section, #footer_texto{
         margin-bottom: 25px;
     }
     #hero_row_titulo {
@@ -142,7 +142,7 @@ body {
         font-weight: 700;
         text-align: center;
     }
-    .caixa-servicos{
+    .caixa_servicos{
         height: 357px;
         width: 316px;
         margin: 0 auto;
@@ -204,7 +204,6 @@ body {
         justify-content: space-between;
         height: 75px;
         padding: 0 20px;
-        word-wrap: none;
     }
     #logo_texto_nav{
         font-size: var(--fonte-titulo-secundaria-telas-p);
@@ -279,7 +278,7 @@ body {
         align-items: center;
         justify-content: space-around;
     }
-    .caixa-servicos{
+    .caixa_servicos{
         width: 316px;
         height: 387px; 
         padding: 0 2%;
@@ -412,7 +411,7 @@ body {
     .titulo_section{
         font-size: var(--fonte-titulo-telas-g);
     }
-    .caixa-servicos{
+    .caixa_servicos{
         width: 472px;
         height: 489px; 
         padding: 0 5%;
@@ -467,7 +466,6 @@ body {
         padding-left: 125px;
         padding-right: 125px;
     }
-
     #horario_funcionamento{
         font-size: var(--fonte-titulo-secundaria-telas-p);
         text-align: center;
