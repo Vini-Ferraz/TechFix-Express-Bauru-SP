@@ -162,7 +162,7 @@ a > #botao_hero_row:hover{
         padding: 10px;
 
     }
-    #botao_hero_row > a {
+    a > #botao_hero_row{
         text-decoration: none;
         color: var(--fonte-cor-branca);
         font-size: var(--fonte-texto-telas-p);
