@@ -9,7 +9,7 @@ let diaTest = myRegex.test(diaDaSemanaTratado);
 
 if (horaTest == false && diaTest == false) {
     if (diaDaSemana !== 6 && diaDaSemana !== 0) {
-        if (hora >= 10 && hora <= 18) {
+        if (hora >= 9 && hora <= 18) {
             document.getElementById('hero_row_horario').textContent = "Estamos abertos até as 18:00"
         }else{
             document.getElementById('hero_row_horario').textContent = "Estamos fechados";
