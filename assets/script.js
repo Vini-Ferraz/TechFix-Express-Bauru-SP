@@ -1,16 +1,24 @@
 const data = new Date();
 let diaDaSemana = data.getDay();
 let hora = data.getHours();
+let diaDaSemanaTratado = diaDaSemana.toString();
+let horaTratada = hora.toString();
+let myRegex = /[^0-9]/g;
+let horaTest = myRegex.test(horaTratada);
+let diaTest = myRegex.test(diaDaSemanaTratado);
 
-if (diaDaSemana !== 6 && diaDaSemana !== 0) {
-    if (hora >= 10 && hora <= 18) {
-        document.getElementById('hero_row_horario').innerHTML = "Estamos abertos até as 18:00"
-    }else{
-        document.getElementById('hero_row_horario').innerHTML = "Estamos fechados";
+if (horaTest == false && diaTest == false) {
+    if (diaDaSemana !== 6 && diaDaSemana !== 0) {
+        if (hora >= 10 && hora <= 18) {
+            document.getElementById('hero_row_horario').textContent = "Estamos abertos até as 18:00"
+        }else{
+            document.getElementById('hero_row_horario').textContent = "Estamos fechados";
+        }
+    }else if (diaDaSemana == 6) {
+        document.getElementById('hero_row_horario').textContent = "Estamos abertos até as 14H";
+    }else {
+        document.getElementById('hero_row_horario').textContent = "Estamos fechados";
     }
-}else if (diaDaSemana == 7) {
-    document.getElementById('hero_row_horario').innerHTML = "Estamos abertos até as 14H";
-}else {
-    document.getElementById('hero_row_horario').innerHTML = "Estamos fechados";
+}else{
+    document.getElementById('hero_row_horario').textContent = "INSIRA DADOS VALIDOS";
 }
-
