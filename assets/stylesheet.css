@@ -24,6 +24,15 @@
     transition: 350ms ease-in;
     scroll-behavior: smooth;
 }
+@keyframes caixa-aviso {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
 body {
     font-family: 'Jura', sans-serif;
 }
@@ -51,9 +60,14 @@ body {
     font-weight: 700;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
 }
-#botao_hero_row > a {
+a > #botao_hero_row {
     text-decoration: none;
     color: var(--fonte-cor-branca);
+    cursor: pointer;
+}
+a > #botao_hero_row:hover{
+    transform: scale(1.05);
+    background-color: var(--verde-secundario-fundo);
 }
 #servicos_section, #contato_section{
     background: linear-gradient(104deg, var(--verde-secundario-fundo) 0%, var(--verde-fundo) 47.4%, var(--azul-fundo) 100%); 
@@ -75,8 +89,28 @@ body {
     color: var(--fonte-cor-branca);
 }
 
+#aviso{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 75vw;
+    width: 75vw;
+    padding: 5vw;
+    background-color: red;
+    border-radius: 1vw;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    opacity: 0%;
+    animation-name: caixa-aviso;
+    animation-duration: 7s;
+}
+
 
 @media (max-width: 700px) {
+    #aviso{
+        left: 50%;
+        top: 40%;
+        font-size: 5vw;
+    }
     #imagem_flecha{
         width: 45px;
     }
@@ -194,6 +228,13 @@ body {
     }
 }
 @media (min-width: 701px) {
+    #aviso{
+        left: 50%;
+        top: 50%;
+        height: 50vw;
+        width: 50vw;
+        font-size: 3vw;
+    }
     #imagem_flecha{
         width: 50px;
     }
@@ -355,6 +396,13 @@ body {
     }
 }
 @media (min-width: 1000px) {
+    #aviso{
+        left: 50%;
+        top: 50%;
+        height: 30vw;
+        width: 30vw;
+        font-size: 1.7vw;
+    }
     #menu_navegacao{
         height: 80px;
         padding: 5% 90px;
